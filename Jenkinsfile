@@ -15,7 +15,7 @@ pipeline {
                   withAWS(region:'us-east-1',credentials:'user/jenkins123') 
          {
                   sh 'echo "Uploading content with AWS creds"'
-                      s3Upload(file:'app.py', bucket:'jenkins0307')
+                      s3Upload(file:'app.py', bucket:'jenkinspipe')
                   
                   }
               }
